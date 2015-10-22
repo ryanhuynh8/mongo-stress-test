@@ -58,7 +58,7 @@ namespace MongoTest.Controllers
             Random r = new Random();
 
             /* get all record and random select one */
-            var allRecord = await collection.Find(new BsonDocumentFilterDefinition<BusinessObjectModel>(new BsonDocument())).ToListAsync();
+            //var allRecord = await collection.Find(new BsonDocumentFilterDefinition<BusinessObjectModel>(new BsonDocument())).ToListAsync();
             int n = r.Next(0, 50001);
             response.Add(n.ToString());
 

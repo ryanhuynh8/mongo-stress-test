@@ -1,0 +1,13 @@
+[1mdiff --git a/MongoTest/Controllers/FooController.cs b/MongoTest/Controllers/FooController.cs[m
+[1mindex dbb5e1a..5484594 100644[m
+[1m--- a/MongoTest/Controllers/FooController.cs[m
+[1m+++ b/MongoTest/Controllers/FooController.cs[m
+[36m@@ -58,7 +58,7 @@[m [mnamespace MongoTest.Controllers[m
+             Random r = new Random();[m
+ [m
+             /* get all record and random select one */[m
+[31m-            var allRecord = await collection.Find(new BsonDocumentFilterDefinition<BusinessObjectModel>(new BsonDocument())).ToListAsync();[m
+[32m+[m[32m            //var allRecord = await collection.Find(new BsonDocumentFilterDefinition<BusinessObjectModel>(new BsonDocument())).ToListAsync();[m
+             int n = r.Next(0, 50001);[m
+             response.Add(n.ToString());[m
+ [m
